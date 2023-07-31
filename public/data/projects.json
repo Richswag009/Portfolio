@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Movie-App ",
+    "image": "/projects/movieApp.jpg",
+    "link": "https://github.com/Richswag009/Movie-app",
+    "liveLink": "https://riches-movie-app.netlify.app/",
+    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "builtWith": ["react", "tailwindcss"]
+  },
+  {
+    "name": "FakeStore Ecommerce ",
+    "image": "/projects/fakestoreEcommerce.jpg",
+    "link": "https://github.com/Richswag009/fakestore-ecommerce",
+    "liveLink": "https://riches-fakestore-ecommerce.netlify.app/",
+    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "builtWith": ["react", "tailwindcss", "redux-toolkit", "redux"]
+  },
+  {
+    "name": "GPT-3 ",
+    "image": "/projects/GPT-3.jpg",
+    "link": "https://github.com/Richswag009/nextjs__GPT3__website",
+    "liveLink": "https://nextjs-gpt-3-website.vercel.app/",
+    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "builtWith": ["nextjs 13", "tailwindcss"]
+  },
+  {
+    "name": "Home Rental ",
+    "image": "/projects/homeRental.jpg",
+    "link": "https://github.com/Richswag009/home-rental",
+    "liveLink": "https://my-home-rental.vercel.app/",
+    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "builtWith": ["React", "tailwindcss"]
+  },
+  {
+    "name": "Expense Tracker ",
+    "image": "/projects/expenseTracker.jpg",
+    "link": "https://github.com/Richswag009/tailwind-loopstudio-project",
+    "liveLink": "https://react-expenes-tracker.netlify.app/",
+    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "builtWith": ["React", "CSS"]
+  },
+  {
+    "name": "Loop Studio ",
+    "image": "/projects/loopstudio.jpg",
+    "link": "https://github.com/Richswag009/tailwind-loopstudio-project",
+    "liveLink": "https://riches-loop-studios.netlify.app/",
+    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "builtWith": ["Html", "tailwindcss"]
+  },
+  {
+    "name": "Weather-app ",
+    "image": "/projects/weatherApp.jpg",
+    "link": "https://github.com/Richswag009/",
+    "liveLink": "https://riches-weather-forecast.netlify.app/",
+    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "builtWith": ["Html", "CSS", "openWeather API"]
+  }
+]
