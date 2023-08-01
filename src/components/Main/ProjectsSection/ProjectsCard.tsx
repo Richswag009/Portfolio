@@ -21,7 +21,8 @@ const ProjectsCard = ({
   name,
   liveLink,
   builtWith,
-}: // orientation,
+  // orientation,
+}:
 ProjectCardprops) => {
   return (
     <motion.div

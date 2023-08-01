@@ -37,7 +37,7 @@ const Projects: NextPage = () => {
                 about={item.about}
                 builtWith={item.builtWith}
                 liveLink={item.liveLink}
-                orientation={random()}
+                // orientation={random()}
               />
             ))}
           </section>
