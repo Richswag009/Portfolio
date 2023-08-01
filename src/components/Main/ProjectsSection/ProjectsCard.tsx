@@ -42,7 +42,7 @@ ProjectCardprops) => {
           priority
           className="w-full "
         />
-        <div className="px-8 py-4 bg-body">
+        <div className="px-2 py-1 lg:px-8 lg:py-4 bg-body">
           <div className=" flex justify-between  items-center">
             <h1 className="text-2xl font-bold">{name}</h1>
             <div className="flex items-center  space-x-4">
@@ -58,7 +58,7 @@ ProjectCardprops) => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-wrap items-center mt-2  justify-center  md:justify-start">
+          <div className="flex flex-wrap md:items-center mt-2 md:justify-start">
             {builtWith.map((item, index) => (
               <span
                 key={index}
