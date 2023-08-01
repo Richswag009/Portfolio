@@ -12,7 +12,7 @@ const Mobile = ({ handleMenuToggle }: Props) => {
   const linkArray = ["home", "about", "projects", "contact me"];
   return (
     <motion.div
-      className="md:hidden absolute h-screen overflow-hidden w-3/4 top-0 right-0 bg-veryDark z-50"
+      className="md:hidden absolute h-screen overflow-hidden w-3/4 top-0 right-0  bg-white text-veryDark z-50"
       initial={{ opacity: 0 }}
       variants={menuVariant}
       whileInView={"show"}
@@ -21,13 +21,14 @@ const Mobile = ({ handleMenuToggle }: Props) => {
       <div className="px-6 md:px-10 w-full">
         <div className="absolute right-6 top-6 ">
           {/* hamburger */}
-          <div className="lg:hidden" onClick={handleMenuToggle}>
+          <div className="lg:hidden text-veryDark" onClick={handleMenuToggle}>
             <Image
               src={"/icons/close.svg"}
               alt="Open Menu Icon"
               aria-label="open mobile menu"
               width={40}
               height={25}
+              className="text-veryDark bg-veryDark"
             />
           </div>
         </div>
