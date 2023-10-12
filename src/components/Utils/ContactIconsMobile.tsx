@@ -39,7 +39,7 @@ const ContactIconsMobile = () => {
         </ul>
       </div>
       {/* right */}
-      <div className="flex items-center justify-center border-cyan left-auto">
+      <div className="flex mx-3 items-center justify-center border-cyan left-auto">
         <div className="list-none">
           <div className="md:rotate-90">
             <Link legacyBehavior  href={`mailto:richesmetelewawon@gmail.com`}>
