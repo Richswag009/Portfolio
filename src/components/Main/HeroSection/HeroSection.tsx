@@ -12,16 +12,6 @@ const HeroSection = () => {
       <div className="relative w-full mx-auto">
         {/* name */}
         <div className=" font-bold text-cyan font-pop  w-full">
-          {/* <motion.p
-            className="font-pop text-lg md:text-xl mb-4 md:mb-6"
-            initial={{ y: 20, opacity: 0 }}
-            animate={{
-              y: 0,
-              opacity: 1,
-              transition: { duration: 0.3, delay: 0.55 },
-            }}
-          >
-          </motion.p> */}
           <motion.h1
             className="flex items-center space-x-5 pb-7 font-pop text-text text-3xl sm:text-4xl md:text-[5rem] md:leading-[1.3]"
             initial={{ y: 20, opacity: 0 }}

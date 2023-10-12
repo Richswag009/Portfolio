@@ -1,7 +1,7 @@
 [
   {
     "name": "Galleria ",
-    "image": "/projects/galleria.jpg",
+    "image": "/projects/galleria.png",
     "link": "https://github.com/Richswag009/Gallleria",
     "liveLink": "https://gallleria.netlify.app/",
     "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
