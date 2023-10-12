@@ -9,7 +9,7 @@ const ResumeButton = () => {
     >
       <Link
         legacyBehavior
-        href={`https://drive.google.com/file/d/1u2SsemPftBegWQdg0H6rJ0nIhHFlnAMp/view?usp=drivesdk`}
+        href={`https://drive.google.com/file/d/1FvII-frByYy_wZpLksm1SSI7plIqbqW7/view?usp=drive_link`}
       >
         <a target="_blank" rel="noreferrer">
           <div className="flex w-full h-full items-center">
