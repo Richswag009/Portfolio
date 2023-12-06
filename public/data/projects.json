@@ -1,5 +1,13 @@
 [
   {
+    "name": "Acme Dashboard ",
+    "image": "/projects/acme-dashboard.png",
+    "link": "https://github.com/Richswag009/acme-dashboard",
+    "liveLink": "https://acme-dashboard-beta.vercel.app/",
+    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "builtWith": ["Next.Js", "NextAuth", "tailwindcss", "Vercel/Postgres"]
+  },
+  {
     "name": "Galleria ",
     "image": "/projects/galleria.png",
     "link": "https://github.com/Richswag009/Gallleria",
