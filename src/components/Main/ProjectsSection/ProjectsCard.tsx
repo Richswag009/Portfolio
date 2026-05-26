@@ -12,18 +12,23 @@ export type ProjectCardprops = {
   link: string;
   liveLink: string;
   builtWith: string[];
+  badge?: string;
+  liveLabel?: string;
+  demoLink?: string;
 };
 
 const ProjectsCard = ({
-  // about,
+  about,
   image,
   link,
   name,
   liveLink,
   builtWith,
+  badge,
+  liveLabel,
+  demoLink,
   // orientation,
-}:
-ProjectCardprops) => {
+}: ProjectCardprops) => {
   return (
     <motion.div
       className="w-full  rounded-lg"
@@ -43,21 +48,49 @@ ProjectCardprops) => {
           className="w-full "
         />
         <div className="px-2 py-1 lg:px-8 lg:py-4 bg-body">
-          <div className=" flex justify-between  items-center">
-            <h1 className="text-2xl font-bold">{name}</h1>
-            <div className="flex items-center  space-x-4">
+          <div className=" flex justify-between  items-start gap-4">
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-2">
+                <h1 className="text-2xl font-bold">{name}</h1>
+                {badge && (
+                  <span className="text-xs font-semibold bg-cyan/20 text-cyan px-2 py-1 rounded-sm whitespace-nowrap">
+                    {badge}
+                  </span>
+                )}
+              </div>
+            </div>
+            <div className="flex items-center  space-x-4 flex-shrink-0">
               <Link href={`${link}`} aria-label={`${name} github link`}>
                 <>
                   <Github />
                 </>
               </Link>
-              <Link href={`${liveLink}`} aria-label={`${name} live link`}>
-                <>
-                  <LiveLink />
-                </>
-              </Link>
+              {liveLink ? (
+                <Link href={`${liveLink}`} aria-label={`${name} live link`}>
+                  <>
+                    <LiveLink />
+                  </>
+                </Link>
+              ) : demoLink ? (
+                <Link
+                  href={`${demoLink}`}
+                  aria-label={`${name} demo link`}
+                  target="_blank"
+                >
+                  <span className="text-xs font-semibold bg-cyan/20 text-cyan px-2 py-1 rounded-sm whitespace-nowrap">
+                    Watch Demo
+                  </span>
+                </Link>
+              ) : liveLabel ? (
+                <span className="text-xs font-semibold text-text_Light">
+                  {liveLabel}
+                </span>
+              ) : null}
             </div>
           </div>
+          <p className="text-sm text-text_Light mt-3 mb-3 leading-relaxed">
+            {about}
+          </p>
           <div className="flex flex-wrap md:items-center mt-2 md:justify-start">
             {builtWith.map((item, index) => (
               <span

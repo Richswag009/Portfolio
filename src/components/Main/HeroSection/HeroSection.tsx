@@ -38,7 +38,8 @@ const HeroSection = () => {
               transition: { duration: 0.3, delay: 0.7 },
             }}
           >
-            I build things for the web.
+            Full-Stack Engineer building production systems in fintech,
+            healthcare, and API infrastructure
           </motion.p>
         </div>
         {/* brief about info */}
@@ -52,13 +53,10 @@ const HeroSection = () => {
               transition: { duration: 0.3, delay: 0.8 },
             }}
           >
-            I am a<span className="text-cyan"> FullStack Developer</span> that
-            builds and ships interactive user interfaces and experiences using
-            the <Text text="latest" /> and most{" "}
-            <Text text="efficient technologies " /> and{" "}
-            <Text text="design systems " /> available. My goal is to deliver the
-            best, easiest, and most functional long-term solutions that meet the
-            company&apos;s requirements.
+            With over 3+ years of professional experience, I design and deploy
+            robust backend systems, APIs, and full-stack applications.
+            Specialized in Laravel, Node.js, PostgreSQL, and cloud
+            infrastructure. I deliver production-ready solutions that scale.
           </motion.p>
         </div>
         {/* buttons */}

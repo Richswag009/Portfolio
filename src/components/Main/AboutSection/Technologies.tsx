@@ -21,6 +21,10 @@ const Technologies = () => {
     "express",
     "mongodb",
     "figma",
+    "postgresql",
+    "docker",
+    "redis",
+    "java",
   ];
   return (
     <>

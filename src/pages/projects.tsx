@@ -10,7 +10,11 @@ const Projects: NextPage = () => {
   };
   return (
     <>
-      <HeadSection page="Projects" title="Portfolio - Project Page" />
+      <HeadSection
+        page="Projects"
+        title="My Projects — Riches Metelewawon"
+        description="Portfolio of production systems and full-stack projects in fintech, healthcare, and API infrastructure. Built with Laravel, Node.js, React, PostgreSQL, and cloud infrastructure."
+      />
       <main className="relative font-pop  min-h-screen flex items-center justify-center  w-full bg-body overflow-x-hidden py-16 ">
         <div className="max-w-4xl xl:max-w-[1000px] px-6 md:px-10 lg:px-0 w-full ">
           <PageTitle page="My" addon="Projects" />

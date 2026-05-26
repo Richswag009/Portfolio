@@ -1,5 +1,41 @@
 [
   {
+    "name": "OutboundIQ — API Intelligence Platform",
+    "image": "/projects/outboundiq.png",
+    "link": "",
+    "liveLink": "https://outboundiq.dev",
+    "about": "A real-time API monitoring platform that detects third-party API failures before they affect end users. Correlates provider status pages with live transaction data using AI. Built the Laravel monitoring engine, integrated Grok LLM for provider health analysis, and published the laravel-outboundiq SDK reducing integration setup time by 60%.",
+    "builtWith": [
+      "Laravel",
+      "Next.js",
+      "PostgreSQL",
+      "Grok AI",
+      "Redis",
+      "REST API"
+    ],
+    "badge": "Full-Stack"
+  },
+  {
+    "name": "Edo Specialist Hospital — Clinical Accounting System",
+    "image": "/projects/accounting.png",
+    "link": "",
+    "liveLink": "",
+    "liveLabel": "Client Project · Demo Available on Request",
+    "about": "Custom double-entry accounting platform built for a 200-bed government hospital to replace Sage accounting software. Includes full procurement workflows, automated ledger posting, financial reporting (P&L, balance sheet, trial balance), and real-time sync with the hospital's e-clinic system.",
+    "builtWith": ["PHP", "Laravel", "MySQL", "REST API", "React", "Next.js"],
+    "badge": "Full-Stack"
+  },
+  {
+    "name": "EVE — Online Event Ticketing Platform",
+    "image": "/projects/eve-ticketing.png",
+    "link": "",
+    "liveLink": "https://drive.google.com/file/d/1Vy5b0YObtcqmmF5zwjQ7TtVzL46IBaPr/view",
+    "demoLink": "https://drive.google.com/file/d/1Vy5b0YObtcqmmF5zwjQ7TtVzL46IBaPr/view",
+    "about": "A full event ticketing platform where users can register, create events, add speakers, and purchase tickets. Built the entire frontend, integrating with an AdonisJS REST API for auth, event management, and ticket transactions. Collaborative project — I owned the frontend, backend was built by another developer using AdonisJS.",
+    "builtWith": ["Next.js", "TypeScript", "Tailwind CSS", "REST API"],
+    "badge": "Frontend"
+  },
+  {
     "name": "Acme Dashboard ",
     "image": "/projects/acme-dashboard.png",
     "link": "https://github.com/Richswag009/acme-dashboard",

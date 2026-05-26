@@ -43,10 +43,10 @@ const AboutItems = () => {
               whileInView={aboutVariant.p2}
               viewport={{ once: true }}
             >
-              Transformng my creativity and knowledge into websites have been my
-              passion for months now. During this time, I have helped various
-              clients establish their presence online. I also love learning new
-              technologies and frameworks.
+              Transforming my creativity and knowledge into websites has been my
+              passion over the past 3+ years. During this time, I have helped
+              various clients establish their presence online. I also love
+              learning new technologies and frameworks.
             </motion.p>
             <motion.p
               className="font-normal text-lg text-text lg:text-xl mb-6 md:mb-11"
