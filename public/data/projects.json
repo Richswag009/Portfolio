@@ -40,7 +40,7 @@
     "image": "/projects/acme-dashboard.png",
     "link": "https://github.com/Richswag009/acme-dashboard",
     "liveLink": "https://acme-dashboard-beta.vercel.app/",
-    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "about": "A modern dashboard application with secure user authentication powered by NextAuth. Leverages Vercel Postgres for reliable data management with a responsive interface built on Next.js.",
     "builtWith": ["Next.Js", "NextAuth", "tailwindcss", "Vercel/Postgres"]
   },
   {
@@ -48,7 +48,7 @@
     "image": "/projects/galleria.png",
     "link": "https://github.com/Richswag009/Gallleria",
     "liveLink": "https://gallleria.netlify.app/",
-    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "about": "An interactive image gallery application featuring intuitive drag-and-drop functionality for organizing images. Built with React and Firebase for storage, with DND Kit providing smooth, responsive interactions.",
     "builtWith": ["react", "FireBase", "tailwindcss", "DND KIT"]
   },
   {
@@ -56,7 +56,7 @@
     "image": "/projects/movieApp.jpg",
     "link": "https://github.com/Richswag009/Movie-app",
     "liveLink": "https://riches-movie-app.netlify.app/",
-    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "about": "A movie discovery application that enables users to search and explore films from a comprehensive database with detailed information. Built with React and styled with Tailwind CSS for a responsive, seamless experience.",
     "builtWith": ["react", "tailwindcss"]
   },
   {
@@ -64,7 +64,7 @@
     "image": "/projects/fakestoreEcommerce.jpg",
     "link": "https://github.com/Richswag009/fakestore-ecommerce",
     "liveLink": "https://riches-fakestore-ecommerce.netlify.app/",
-    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "about": "A fully functional ecommerce storefront featuring product browsing, cart management, and checkout flow. Built with React and Redux Toolkit for state management, with Tailwind CSS providing a polished, responsive interface.",
     "builtWith": ["react", "tailwindcss", "redux-toolkit", "redux"]
   },
   {
@@ -72,7 +72,7 @@
     "image": "/projects/GPT-3.jpg",
     "link": "https://github.com/Richswag009/nextjs__GPT3__website",
     "liveLink": "https://nextjs-gpt-3-website.vercel.app/",
-    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "about": "A modern, responsive landing page inspired by GPT-3, showcasing contemporary web design and UX best practices. Built with Next.js 13 and Tailwind CSS for optimal performance and visual appeal.",
     "builtWith": ["nextjs 13", "tailwindcss"]
   },
   {
@@ -80,7 +80,7 @@
     "image": "/projects/homeRental.jpg",
     "link": "https://github.com/Richswag009/home-rental",
     "liveLink": "https://my-home-rental.vercel.app/",
-    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "about": "A home rental listing interface that displays available properties with filtering, sorting, and detailed property information. Built with React and Tailwind CSS for a clean, intuitive user experience.",
     "builtWith": ["React", "tailwindcss"]
   },
   {
@@ -88,7 +88,7 @@
     "image": "/projects/expenseTracker.jpg",
     "link": "https://github.com/Richswag009/tailwind-loopstudio-project",
     "liveLink": "https://react-expenes-tracker.netlify.app/",
-    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "about": "A personal expense tracking application that helps users log transactions and monitor their spending over time. Built with React for interactivity and custom CSS for a clean, functional interface.",
     "builtWith": ["React", "CSS"]
   },
   {
@@ -96,7 +96,7 @@
     "image": "/projects/loopstudio.jpg",
     "link": "https://github.com/Richswag009/tailwind-loopstudio-project",
     "liveLink": "https://riches-loop-studios.netlify.app/",
-    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "about": "A static landing page clone that demonstrates modern design principles and responsive layout techniques. Built with HTML and Tailwind CSS for semantic markup and utility-based styling.",
     "builtWith": ["Html", "tailwindcss"]
   },
   {
@@ -104,7 +104,7 @@
     "image": "/projects/weatherApp.jpg",
     "link": "https://github.com/Richswag009/",
     "liveLink": "https://riches-weather-forecast.netlify.app/",
-    "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
+    "about": "A real-time weather forecast application that provides current conditions and forecasts based on location. Built with HTML and CSS, integrated with the OpenWeather API for accurate weather data.",
     "builtWith": ["Html", "CSS", "openWeather API"]
   }
 ]
