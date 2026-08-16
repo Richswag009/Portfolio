@@ -1,49 +1,46 @@
-import { motion } from "framer-motion";
 import type { NextPage } from "next";
-import {
-  AboutItems,
-  HeadSection,
-  PageTitle,
-  Technologies,
-} from "../components";
+import HeadSection from "@/components/Head/HeadSection";
+import Section from "@/components/UI/Section";
+import Kicker from "@/components/UI/Kicker";
+import Reveal from "@/components/UI/Reveal";
+import AboutContent from "@/components/About/AboutContent";
+import SkillsGrid from "@/components/Skills/SkillsGrid";
+import { site } from "@/content";
 
 const About: NextPage = () => {
   return (
     <>
       <HeadSection
-        title="Riches Metelewawon — Full-Stack Engineer"
+        title={`About — ${site.name}`}
         page="About"
-        description="Full-Stack Engineer with 3+ years of experience building production systems in fintech, healthcare, and API infrastructure. Specialized in Laravel, Node.js, React, TypeScript, and PostgreSQL."
+        description="About Riches Metelewawon — a full-stack engineer focused on backend systems, APIs, and production-ready products."
+        path="/about"
       />
-      <main className="relative font-pop  min-h-screen flex items-center justify-center  w-full bg-body overflow-x-hidden py-16 ">
-        <div className="max-w-4xl xl:max-w-[1000px] px-6 md:px-10 lg:px-0">
-          <PageTitle page="About" addon="Me" />
-          <section className="pt-10 lg:pt-20 pb-14">
-            <AboutItems />
-          </section>
-          {/* technologies */}
-          <section className="pt-7 md:pt-10 lg:pt-14 flex justify-center flex-col">
-            {/* heading */}
-            <motion.div
-              className="heading text-center mb-4"
-              aria-label="Heading"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}
-            >
-              <h2
-                className="text-2xl lg:text-4xl font-semibold capitalize text-cyan tracking-wide mb-4"
-                id="heading"
-              >
-                technologies that i use
-              </h2>
-              <p className="text-lg text-text">
-                Here are some technologies i am using or have used recently
-              </p>
-            </motion.div>
-            {/* techs */}
-            <Technologies />
-          </section>
-        </div>
+      <main className="w-full overflow-x-hidden">
+        <Section className="pb-10 pt-32 md:pt-40">
+          <Reveal>
+            <Kicker>About</Kicker>
+            <h1 className="mt-3 max-w-2xl text-4xl font-semibold text-text md:text-5xl">
+              A bit about how I work
+            </h1>
+          </Reveal>
+        </Section>
+
+        <Section className="border-t border-border pt-14">
+          <AboutContent />
+        </Section>
+
+        <Section className="border-t border-border">
+          <Reveal>
+            <Kicker>Toolkit</Kicker>
+            <h2 className="mt-3 text-3xl font-semibold text-text md:text-4xl">
+              Technologies I use
+            </h2>
+          </Reveal>
+          <div className="mt-10">
+            <SkillsGrid />
+          </div>
+        </Section>
       </main>
     </>
   );

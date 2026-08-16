@@ -1,27 +1,36 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import HeroSection from "@/components/Main/HeroSection/HeroSection";
-import { HeadSection } from "@/components";
+import HeadSection from "@/components/Head/HeadSection";
+import Section from "@/components/UI/Section";
+import Hero from "@/components/Home/Hero";
+import FeaturedWork from "@/components/Home/FeaturedWork";
+import SkillsPreview from "@/components/Home/SkillsPreview";
+import ContactCTA from "@/components/Contact/ContactCTA";
+import { site } from "@/content";
 
-const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
       <HeadSection
-        title="Riches Metelewawon — Full-Stack Engineer"
+        title={`${site.name} — Software Engineer`}
         page="Home"
-        description="Full-Stack Engineer with 3+ years building production systems in fintech, healthcare, and API infrastructure. React, TypeScript, Laravel, Node.js, PostgreSQL."
+        description={`${site.role} building backend systems, APIs, and production-ready products. ${site.summary}`}
+        path="/"
       />
-      <main className="relative w-full font-pop bg-body overflow-x-hidden">
-        <section className="relative min-h-screen flex justify-center items-center z-20 pt-28 pb-14 font-pop">
-          {/* <div className="absolute inset-0 -z-10">
-            <Image src={"/bg-hero2.png"} alt="" fill priority />
-          </div> */}
-          <div className="max-w-4xl xl:max-w-[1000px] px-6 md:px-10 lg:px-0 relative w-full ">
-            {/* hero items' */}
-            <HeroSection />
-          </div>
-        </section>
+      <main className="w-full overflow-x-hidden">
+        <Section className="pb-16 pt-40 md:pb-20 md:pt-48">
+          <Hero />
+        </Section>
+
+        <Section className="border-t border-border">
+          <FeaturedWork />
+        </Section>
+
+        <Section className="border-t border-border" narrow>
+          <SkillsPreview />
+        </Section>
+
+        <Section className="border-t border-border">
+          <ContactCTA />
+        </Section>
       </main>
     </>
   );
