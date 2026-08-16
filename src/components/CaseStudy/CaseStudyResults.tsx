@@ -3,10 +3,12 @@ import Reveal from "../UI/Reveal";
 
 const isQuantified = (result: string) => /^\d/.test(result);
 
-const CaseStudyResults = ({ results }: { results: string[] }) => {
+type Props = { results: string[]; index?: string };
+
+const CaseStudyResults = ({ results, index = "08" }: Props) => {
   return (
     <Reveal className="border-t border-border py-14 md:py-16">
-      <Kicker index="08">Results</Kicker>
+      <Kicker index={index}>Results</Kicker>
       <h2 className="mt-3 text-2xl font-semibold text-text md:text-3xl">Results</h2>
 
       <ul className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">

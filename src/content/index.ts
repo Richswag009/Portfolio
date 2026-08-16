@@ -1,8 +1,15 @@
 import { outboundiq } from "./projects/outboundiq";
 import { edoSpecialistHospital } from "./projects/edo-specialist-hospital";
+import { quantCore } from "./projects/quant-core";
+import { hookrelay } from "./projects/hookrelay";
 import type { CaseStudy } from "./types";
 
-export const caseStudies: CaseStudy[] = [outboundiq, edoSpecialistHospital];
+export const caseStudies: CaseStudy[] = [
+  outboundiq,
+  edoSpecialistHospital,
+  quantCore,
+  hookrelay,
+];
 
 export function getCaseStudy(slug: string): CaseStudy | undefined {
   return caseStudies.find((project) => project.slug === slug);

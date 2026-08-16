@@ -3,6 +3,11 @@ export type CaseStudySection = {
   detail: string;
 };
 
+export type CodeSample = {
+  label: string;
+  code: string;
+};
+
 export type CaseStudy = {
   slug: string;
   name: string;
@@ -10,8 +15,9 @@ export type CaseStudy = {
   badge: string;
   role: string;
   dates: string;
-  image: string;
-  imageAlt: string;
+  image?: string;
+  imageAlt?: string;
+  codeSample?: CodeSample;
   liveLink?: string;
   liveLabel?: string;
   demoLink?: string;
@@ -21,11 +27,18 @@ export type CaseStudy = {
   problem: string;
   myRole: string[];
   solution: string;
+  workflowSteps?: string[];
   architecture: CaseStudySection[];
   diagram: string[][];
+  technicalImplementation?: CaseStudySection[];
   challenges: CaseStudySection[];
+  failureScenarios?: CaseStudySection[];
   decisions: CaseStudySection[];
-  results: string[];
+  securityReliability?: CaseStudySection[];
+  testing?: string;
+  tradeoffs?: CaseStudySection[];
+  results?: string[];
+  whatILearned?: string;
   improvements: string[];
   gallery?: { src: string; alt: string }[];
 };

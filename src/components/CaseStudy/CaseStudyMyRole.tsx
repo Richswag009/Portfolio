@@ -1,7 +1,9 @@
 import CaseStudyProse from "./CaseStudyProse";
 
-const CaseStudyMyRole = ({ myRole }: { myRole: string[] }) => (
-  <CaseStudyProse index="03" title="My Role">
+type Props = { myRole: string[]; index?: string };
+
+const CaseStudyMyRole = ({ myRole, index = "03" }: Props) => (
+  <CaseStudyProse index={index} title="My Role">
     <ul className="space-y-3">
       {myRole.map((item) => (
         <li key={item} className="flex gap-3">

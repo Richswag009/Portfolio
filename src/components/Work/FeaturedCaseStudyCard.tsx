@@ -19,13 +19,25 @@ const FeaturedCaseStudyCard = ({ project, reverse = false }: Props) => {
         href={`/work/${project.slug}`}
         className="group relative block aspect-[4/3] overflow-hidden rounded-lg border border-border bg-surface"
       >
-        <Image
-          src={project.image}
-          alt={project.imageAlt}
-          fill
-          sizes="(min-width: 768px) 50vw, 100vw"
-          className="object-cover object-top duration-500 group-hover:scale-[1.03]"
-        />
+        {project.image ? (
+          <Image
+            src={project.image}
+            alt={project.imageAlt ?? project.name}
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="object-cover object-top duration-500 group-hover:scale-[1.03]"
+          />
+        ) : (
+          <div className="flex h-full w-full flex-col justify-between p-6 duration-500 group-hover:scale-[1.02]">
+            <span className="font-mono text-xs text-faint">
+              {project.codeSample?.label ?? project.slug}
+            </span>
+            <span className="font-mono text-lg text-muted md:text-xl">
+              {project.name}
+              <span className="text-accent">.</span>
+            </span>
+          </div>
+        )}
       </Link>
 
       <div>

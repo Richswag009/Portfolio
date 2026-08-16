@@ -6,12 +6,13 @@ import FlowDiagram from "./diagrams/FlowDiagram";
 type Props = {
   architecture: CaseStudySection[];
   diagram: string[][];
+  index?: string;
 };
 
-const CaseStudyArchitecture = ({ architecture, diagram }: Props) => {
+const CaseStudyArchitecture = ({ architecture, diagram, index = "05" }: Props) => {
   return (
     <Reveal className="border-t border-border py-14 md:py-16">
-      <Kicker index="05">Technical Architecture</Kicker>
+      <Kicker index={index}>Technical Architecture</Kicker>
       <h2 className="mt-3 text-2xl font-semibold text-text md:text-3xl">
         Technical Architecture
       </h2>

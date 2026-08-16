@@ -85,19 +85,38 @@ const CaseStudyHero = ({ project }: { project: CaseStudy }) => {
         ))}
       </Reveal>
 
-      <Reveal
-        delay={0.24}
-        className="relative mt-10 aspect-[16/9] w-full overflow-hidden rounded-lg border border-border bg-surface"
-      >
-        <Image
-          src={project.image}
-          alt={project.imageAlt}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-top"
-        />
-      </Reveal>
+      {project.image ? (
+        <Reveal
+          delay={0.24}
+          className="relative mt-10 aspect-[16/9] w-full overflow-hidden rounded-lg border border-border bg-surface"
+        >
+          <Image
+            src={project.image}
+            alt={project.imageAlt ?? project.name}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-top"
+          />
+        </Reveal>
+      ) : project.codeSample ? (
+        <Reveal
+          delay={0.24}
+          className="mt-10 overflow-hidden rounded-lg border border-border bg-surface"
+        >
+          <div className="flex items-center gap-2 border-b border-border px-4 py-3">
+            <span className="h-2.5 w-2.5 rounded-full bg-border" />
+            <span className="h-2.5 w-2.5 rounded-full bg-border" />
+            <span className="h-2.5 w-2.5 rounded-full bg-border" />
+            <span className="ml-2 font-mono text-xs text-faint">
+              {project.codeSample.label}
+            </span>
+          </div>
+          <pre className="overflow-x-auto p-5 font-mono text-xs leading-relaxed text-muted md:text-sm">
+            <code>{project.codeSample.code}</code>
+          </pre>
+        </Reveal>
+      ) : null}
     </div>
   );
 };

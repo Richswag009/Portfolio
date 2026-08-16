@@ -23,7 +23,7 @@ const FeaturedWork = () => {
       </Reveal>
 
       <div className="mt-12 flex flex-col gap-20 md:gap-28">
-        {caseStudies.map((project, index) => (
+        {caseStudies.slice(0, 2).map((project, index) => (
           <FeaturedCaseStudyCard
             key={project.slug}
             project={project}

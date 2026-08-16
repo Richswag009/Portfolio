@@ -1,7 +1,9 @@
 import CaseStudyProse from "./CaseStudyProse";
 
-const CaseStudyProblem = ({ problem }: { problem: string }) => (
-  <CaseStudyProse index="02" title="The Problem">
+type Props = { problem: string; index?: string };
+
+const CaseStudyProblem = ({ problem, index = "02" }: Props) => (
+  <CaseStudyProse index={index} title="The Problem">
     <p>{problem}</p>
   </CaseStudyProse>
 );
