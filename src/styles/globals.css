@@ -2,15 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #0a0a0c;
+  color: #ececee;
+}
+
+::selection {
+  background-color: #2dd4bf;
+  color: #0a0a0c;
+}
+
 .no-scroll {
   overflow: hidden;
 }
-.h-adj {
-  min-height: calc(100vh - 70px);
+
+/* subtle scrollbar for the dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
-@media (min-width: 1020px) {
-  .h-adj {
-    min-height: calc(100vh - 86px);
-    /* background-color: #e9e9e9; */
-  }
+::-webkit-scrollbar-track {
+  background: #0a0a0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272e;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #383840;
 }

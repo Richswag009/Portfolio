@@ -1,29 +1,27 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import Header from "@/components/Header/Header";
-import { ContactIcons, ContactIconsMobile } from "@/components";
-import { useEffect, useState } from "react";
+import Footer from "@/components/Footer/Footer";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [screenSize, setScreenSize] = useState("");
-
-  const handleResize = () => {
-    const size = window.screen.width;
-    size < 768 ? setScreenSize("small") : setScreenSize("large");
-  };
-
-  useEffect(() => {
-    window.onload = () => handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [screenSize]);
   return (
-    <>
+    <div className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
       <Header />
       <Component {...pageProps} />
-      {screenSize == "small" ? <ContactIconsMobile /> : <ContactIcons />}
-    </>
+      <Footer />
+    </div>
   );
 }

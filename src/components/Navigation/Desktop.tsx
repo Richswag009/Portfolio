@@ -1,19 +1,21 @@
-import { motion } from "framer-motion"
-import LinkWrapper from "./LinkWrapper"
+import LinkWrapper from "./LinkWrapper";
+
+export const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "Work", href: "/work" },
+  { name: "Experience", href: "/experience" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
+];
 
 const Desktop = () => {
-  const linkArray = ["home", "about", "projects", "contact me"]
   return (
-    <motion.div
-      className="flex items-center space-x-8 h-[5.375rem]"
-      initial={{ y: -100 }}
-      animate={{ y: 0, transition: { duration: 0.3, delay: 0.2 } }}
-    >
-      {linkArray.map((item, index) => (
-        <LinkWrapper key={index} name={item} />
+    <nav className="flex items-center space-x-8" aria-label="Primary">
+      {navLinks.map((item) => (
+        <LinkWrapper key={item.href} name={item.name} href={item.href} />
       ))}
-    </motion.div>
-  )
-}
+    </nav>
+  );
+};
 
-export default Desktop
+export default Desktop;
